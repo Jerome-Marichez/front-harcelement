@@ -28,13 +28,14 @@ export function Game() {
 	}, [anaisState, billyState])
 	/** End manage inventory */
 
+	/** Progression */
 	useEffect(() => {
 		text?.includes('bibliothèque') ? setBookOpen(true) : setBookOpen(false);
-		text?.includes('cassier') ? setLockTry(true) : setLockTry(false);
+		text?.includes('casier') ? setLockTry(true) : setLockTry(false);
 		text?.includes('Anais') & anaisState === 0 && setAnaisState(1);
 		text?.includes('Billy') & billyState === 0 && setBillyState(1);
 	}, [text]);
-
+	/** End Progression */
 
 	const selectedLevel = levels.find((level) => level.title_niveau === "level1");
 	const objects = selectedLevel.objects;
@@ -60,18 +61,21 @@ export function Game() {
 							<Object
 								key={index}
 								props={personnage}
-								setText={() => setText(personnage.text)}
+								setText={() => setText(anaisState > 0 ? personnage.text2 : personnage.text)}
+								rotate={anaisState > 0 ? true : false}
 							/>
 						)
-					if (personnage.title === 'bob')
+					if (personnage.title === 'bob') {
+						console.log("anais:" + anaisState);
 						return (
 							<Object
 								key={index}
 								props={personnage}
-								setText={() => setText(personnage.text) }
-								hidden={() => anaisState > 0 ? false : true}
+								setText={() => setText(personnage.text)}
+								hidden={anaisState > 0 ? true : false}
 							/>
 						)
+					}
 					if (personnage.title === 'billy')
 						return (
 							<Object
@@ -81,8 +85,6 @@ export function Game() {
 							/>
 						)
 				})}
-
-
 
 				<MessageText text={text} setText={setText} />
 				<Books isOpen={bookOpen} />

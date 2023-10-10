@@ -1,9 +1,36 @@
 .object {
-	z-index: 1;
-	position: absolute;
-	border: 2px solid transparent;
-	transition: border 0.45s linear;
+  z-index: 1;
+  position: absolute;
+  border: 2px solid transparent;
+  transition: border 0.45s linear;
 }
 
+.object:hover {
+  cursor: pointer;
+  border: 2px solid white;
+}
 
-.object:hover { cursor:pointer; border: 2px solid white;}
+.object--hidden {
+  z-index: 1;
+  position: absolute;
+  border: 2px solid transparent;
+  animation: 7s hidden ease-in forwards;
+}
+@keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}

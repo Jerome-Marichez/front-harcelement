@@ -118,25 +118,27 @@
 		"personnages": [
 			{
 				"title": "bob",
-				"ressources": "./ressources/level1/object/bob.png",
+				"ressources": "./ressources/level1/personnages/bob.png",
 				"top": "200px",
 				"left": "50px",
 				"text": "<b>Bob:</b> Je sais très bien que tu m'apprécies, et si on allait chez moi ? <br><br><b>Anais:</b> Je suis désolée mais je ne suis toujours pas intéressé 😒. <br><br><b>Bob:</b> <i>Avance et lui met la main aux fesses ✋</i> <br><br> <b>Anais:</b> <i>Répond au geste en lui infligeant une claque ✋</i> <br><br><b>Bob:</b> Tu finira par aimer ça 😡<br><br>"
 			},
 			{
 				"title": "anais",
-				"ressources": "./ressources/level1/object/anais.png",
+				"ressources": "./ressources/level1/personnages/anais.png",
+				"ressourcesRotate": "./ressources/level1/personnages/anais_rotate.png",
 				"left": "90px",
 				"top": "200px",
-				"text": "<b>Anais:</b> Je suis désolée mais je ne suis toujours pas intéressé 😒. <br><br><b>Bob:</b> <i>Avance et lui met la main aux fesses ✋</i> <br><br> <b>Anais:</b> <i>Répond au geste en lui infligeant une claque ✋</i> <br><br><b>Bob:</b> Tu finira par aimer ça 😡<br><br>"
+				"text": "<b>Anais:</b> Je suis désolée mais je ne suis toujours pas intéressé 😒. <br><br><b>Bob:</b> <i>Avance et lui met la main aux fesses ✋</i> <br><br> <b>Anais:</b> <i>Répond au geste en lui infligeant une claque ✋</i> <br><br><b>Bob:</b> Tu finira par aimer ça 😡<br><br>",
+				"text2": "<b>Anais:</b> Je suis désolée que tu à du avoir à assisté à ça 😕. <br><br><b>Billy</b> m'a parlé du soucis que tu avait pour réparer l'ascenseur 😩.<br><br> Je sais que l'ancien gardien utilisé son année de naissance pour son mot de passe le voici: <b>1960</b><br><br>J'espère que cela nous aidera 🤔."
 			},
 			{
 				"title": "billy",
-				"ressources": "./ressources/level1/object/billy.png",
+				"ressources": "./ressources/level1/personnages/billy.png",
 				"left": "370px",
 				"top": "300px",
 				"text": "<b>Billy:</b> L'ancien gardien perdait souvent son propre mot de passe. Je sais qu'il avait l'habitude de lire la première page de <b>'Cuisine à la banane'</b>",
-				"text2": "Tu à trouvé le livre de banane superbe 😏, si tu à du temps de disponible ce soir j'aimerais bien t'inviter à boire un verre 🍻"
+				"text2": "<b>Billy:</b> Tu à trouvé le livre de banane superbe 😏, si tu à du temps de disponible ce soir j'aimerais bien t'inviter à boire un verre 🍻"
 			}
 		]
 	}
