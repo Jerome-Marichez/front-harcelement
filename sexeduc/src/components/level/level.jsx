@@ -1,13 +1,13 @@
 import React from "react";
 import "./level.css";
 
-export function Level({ map, children, nightmode }) {
+export function Level({ map, children }) {
 	let classname = "level";
-	if (nightmode) { }
+
 	const style = {
 		backgroundImage: `url(${map})`,
 	};
-
+	
 	return (
 		<div className={classname} style={style}>
 			{children}

@@ -1,6 +1,22 @@
 .game {
-	display: flex;
-	justify-content: center;
-	text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
+.inventory {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  z-index: 5;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  background-color: rgb(61, 49, 49);
+  color: white;
+  padding: 10px;
+  border: 2px solid white;
+}
+.inventory:hover {
+  background-color: rgb(90, 75, 75);
+}

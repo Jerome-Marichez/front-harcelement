@@ -29,6 +29,7 @@
   border: 2px solid white;
   margin-bottom: 5px;
 }
+
 .close:hover {
   background-color: rgb(90, 75, 75);
 }

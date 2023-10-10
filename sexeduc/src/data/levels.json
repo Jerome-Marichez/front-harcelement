@@ -5,30 +5,9 @@
 		"nightmode": true,
 		"objects": [
 			{
-				"title": "bob",
-				"ressources": "./ressources/level1/object/bob.png",
-				"top": "200px",
-				"left": "50px",
-				"text": "<b>Bob:</b> Je sais très bien que tu m'aprécie, et si on allez chez moi ? <br><br><b>Anais:</b> Tu sais très bien que j'ai déjà refusé à deux maintes reprises. <br><br><b>Bob:</b> <i>Avance et embrasse anais</i> <br><br> <b>Anais:</b> <i>Se recule avec dégout</i> <br><br><b>Bob:</b> Tu finira par aimer ça <br><br>"
-			},
-			{
-				"title": "anais",
-				"ressources": "./ressources/level1/object/anais.png",
-				"left": "90px",
-				"top": "200px",
-				"text": "<b>Anais:</b> Tu sais très bien que j'ai déjà refusé à deux maintes reprises. <br><br><b>Bob:</b> <i>Avance et embrasse et anais</i> <br><br> <b>Anais:</b> <i>Se recule avec dégout</i> <br><br><b>Bob:</b> Tu finira par aimer ça <br><br>"
-			},
-			{
-				"title": "billy",
-				"ressources": "./ressources/level1/object/billy.png",
-				"left": "370px",
-				"top": "300px",
-				"text": "<b>Billy:</b> L'ancien gardien perdais souvent son propre mot de passe je sais qu'il avait l'habitude de lire la premiere page d'un livre de cuisine celui spécialisé dans les bananes"
-			},
-			{
 				"title": "ascenseur",
 				"ressources": "./ressources/level1/object/ascenseur.png",
-				"bottom": "1px",
+				"bottom": "-2px",
 				"left": "40px",
 				"text": "La porte de l'ascenseur est bloqué je ne pourrait pas l'ouvrir tant que je ne dispose pas de la cle"
 			},
@@ -55,7 +34,7 @@
 				"ressources": "./ressources/level1/object/library.png",
 				"bottom": "180px",
 				"left": "20px",
-				"text": "Cette bibliothèque est impressionante elle contient de nombreux livres"
+				"text": "Cette bibliothèque est impressionnante, elle contient de nombreux livres."
 			},
 			{
 				"title": "light",
@@ -101,7 +80,7 @@
 				"ressources": "./ressources/level1/object/lock_block.png",
 				"bottom": "70px",
 				"left": "250px",
-				"text": "Je peux tenter d'ouvrir le cassier de XX pour obtenir la clé ? :'("
+				"text": "Je peux tenter d'ouvrir le casier de l'ancien gardien 🤔"
 			},
 			{
 				"title": "map_world",
@@ -134,6 +113,30 @@
 				"ressources": "./ressources/level1/object/windows.png",
 				"left": "180px",
 				"top": "15px"
+			}
+		],
+		"personnages": [
+			{
+				"title": "bob",
+				"ressources": "./ressources/level1/object/bob.png",
+				"top": "200px",
+				"left": "50px",
+				"text": "<b>Bob:</b> Je sais très bien que tu m'apprécies, et si on allait chez moi ? <br><br><b>Anais:</b> Je suis désolée mais je ne suis toujours pas intéressé 😒. <br><br><b>Bob:</b> <i>Avance et lui met la main aux fesses ✋</i> <br><br> <b>Anais:</b> <i>Répond au geste en lui infligeant une claque ✋</i> <br><br><b>Bob:</b> Tu finira par aimer ça 😡<br><br>"
+			},
+			{
+				"title": "anais",
+				"ressources": "./ressources/level1/object/anais.png",
+				"left": "90px",
+				"top": "200px",
+				"text": "<b>Anais:</b> Je suis désolée mais je ne suis toujours pas intéressé 😒. <br><br><b>Bob:</b> <i>Avance et lui met la main aux fesses ✋</i> <br><br> <b>Anais:</b> <i>Répond au geste en lui infligeant une claque ✋</i> <br><br><b>Bob:</b> Tu finira par aimer ça 😡<br><br>"
+			},
+			{
+				"title": "billy",
+				"ressources": "./ressources/level1/object/billy.png",
+				"left": "370px",
+				"top": "300px",
+				"text": "<b>Billy:</b> L'ancien gardien perdait souvent son propre mot de passe. Je sais qu'il avait l'habitude de lire la première page de <b>'Cuisine à la banane'</b>",
+				"text2": "Tu à trouvé le livre de banane superbe 😏, si tu à du temps de disponible ce soir j'aimerais bien t'inviter à boire un verre 🍻"
 			}
 		]
 	}
