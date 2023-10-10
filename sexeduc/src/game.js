@@ -25,6 +25,7 @@ export function Game() {
 			</Level>
 
 			<MessageText text={text} setText={setText} />
+			
 		</div>
 	);
 }

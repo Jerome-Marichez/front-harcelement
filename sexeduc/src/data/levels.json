@@ -8,7 +8,8 @@
 				"title": "ascenseur",
 				"ressources": "./ressources/level1/object/ascenseur.png",
 				"bottom": "1px",
-				"left": "40px"
+				"left": "40px",
+				"text": "La porte de l'ascenseur est bloqué je ne pourrait pas l'ouvrir tant que je ne dispose pas de la cle"
 			},
 			{
 				"title": "chair",
@@ -78,7 +79,7 @@
 				"ressources": "./ressources/level1/object/lock_block.png",
 				"bottom": "70px",
 				"left": "250px",
-				"text": "Je sais que je dois ouvrir le cassier de XX pour disposer de la clé mais je ne dispose pas de son mot de passe :'("
+				"text": "Je peux tenter d'ouvrir le cassier de XX pour obtenir la clé ? :'("
 			},
 			{
 				"title": "map_world",
@@ -111,6 +112,25 @@
 				"ressources": "./ressources/level1/object/windows.png",
 				"left": "180px",
 				"top": "15px"
+			},
+			{
+				"title": "bob",
+				"ressources": "./ressources/level1/object/bob.png",
+				"top": "200px",
+				"left": "50px"
+			},
+			{
+				"title": "anais",
+				"ressources": "./ressources/level1/object/anais.png",
+				"left": "90px",
+				"top": "200px"
+			},
+			{
+				"title": "billy",
+				"ressources": "./ressources/level1/object/billy.png",
+				"left": "370px", 
+				"top": "300px",
+				"text": ""
 			}
 		]
 	}
