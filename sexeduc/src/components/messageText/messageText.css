@@ -1,0 +1,7 @@
+.messagetext {
+	background-color: red;
+	position: absolute;
+	bottom: 50px;
+	max-width: 50%;
+	z-index: 3;
+}

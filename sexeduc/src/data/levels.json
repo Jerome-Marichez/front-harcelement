@@ -1,45 +1,117 @@
-[{
-	"title_niveau": "level1",
-	"map": "./ressources/level1/map.jpg",
-	"nightmode": true,
-	
-	"objects": [
-		{
-			"title": "ascenseur",
-			"ressources": "./ressources/level1/object/ascenseur.png",
-			"bottom": "1px"
-		},
-		{
-			"title": "chair",
-			"ressources": "./ressources/level1/object/chair.png"
-		},
-		{
-			"title": "furniture",
-			"ressources": "./ressources/level1/object/furniture.png"
-		},
-		{
-			"title": "library",
-			"ressources": "./ressources/level1/object/library.png"
-		},
-		{
-			"title": "light",
-			"ressources": "./ressources/level1/object/light.png"
-		},
-		{
-			"title": "lock_block",
-			"ressources": "./ressources/level1/object/lock_block.png"
-		},
-		{
-			"title": "map_world",
-			"ressources": "./ressources/level1/object/map_world.png"
-		},
-		{
-			"title": "table",
-			"ressources": "./ressources/level1/object/table.png"
-		},
-		{
-			"title": "windows",
-			"ressources": "./ressources/level1/object/windows.png"
-		}
-	]
-}]
+[
+	{
+		"title_niveau": "level1",
+		"map": "./ressources/level1/map.jpg",
+		"nightmode": true,
+		"objects": [
+			{
+				"title": "ascenseur",
+				"ressources": "./ressources/level1/object/ascenseur.png",
+				"bottom": "1px",
+				"left": "40px"
+			},
+			{
+				"title": "chair",
+				"ressources": "./ressources/level1/object/chair.png",
+				"top": "340px",
+				"left": "240px"
+			},
+			{
+				"title": "chair",
+				"ressources": "./ressources/level1/object/chair.png",
+				"top": "300px",
+				"left": "240px"
+			},
+			{
+				"title": "furniture",
+				"ressources": "./ressources/level1/object/furniture.png",
+				"top": "120px",
+				"left": "80px"
+			},
+			{
+				"title": "library",
+				"ressources": "./ressources/level1/object/library.png",
+				"bottom": "180px",
+				"left": "20px"
+			},
+			{
+				"title": "light",
+				"ressources": "./ressources/level1/object/light.png",
+				"top": "120px",
+				"left": "20px"
+			},
+			{
+				"title": "light",
+				"ressources": "./ressources/level1/object/light.png",
+				"bottom": "160px",
+				"right": "20px"
+			},
+			{
+				"title": "trees",
+				"ressources": "./ressources/level1/object/trees.png",
+				"top": "220px",
+				"left": "210px",
+				"text": "C'est une plante, je ne vois pas bien en quoi cela me pourrait m'être utile ou m'aider"
+			},
+			{
+				"title": "trees",
+				"ressources": "./ressources/level1/object/trees.png",
+				"top": "380px",
+				"left": "210px",
+				"text": "C'est une plante, je ne vois pas bien en quoi cela me pourrait m'être utile ou m'aider"
+			},
+			{
+				"title": "trees",
+				"ressources": "./ressources/level1/object/trees.png",
+				"top": "220px",
+				"right": "10px",
+				"text": "C'est une plante, je ne vois pas bien en quoi cela me pourrait m'être utile ou m'aider"
+			},
+			{
+				"title": "light",
+				"ressources": "./ressources/level1/object/light.png",
+				"right": "20px",
+				"top": "30px"
+			},
+			{
+				"title": "lock_block",
+				"ressources": "./ressources/level1/object/lock_block.png",
+				"bottom": "70px",
+				"left": "250px",
+				"text": "Je sais que je dois ouvrir le cassier de XX pour disposer de la clé mais je ne dispose pas de son mot de passe :'("
+			},
+			{
+				"title": "map_world",
+				"ressources": "./ressources/level1/object/map_world.png",
+				"top": "220px",
+				"right": "95px",
+				"text": "C'est une carte du monde assez classique"
+			},
+			{
+				"title": "table",
+				"ressources": "./ressources/level1/object/table.png",
+				"bottom": "210px",
+				"right": "100px"
+			},
+			{
+				"title": "windows",
+				"ressources": "./ressources/level1/object/windows.png",
+				"left": "60px",
+				"top": "15px",
+				"text": "C'est une fenêtre"
+			},
+			{
+				"title": "windows",
+				"ressources": "./ressources/level1/object/windows.png",
+				"left": "120px",
+				"top": "15px"
+			},
+			{
+				"title": "windows",
+				"ressources": "./ressources/level1/object/windows.png",
+				"left": "180px",
+				"top": "15px"
+			}
+		]
+	}
+]

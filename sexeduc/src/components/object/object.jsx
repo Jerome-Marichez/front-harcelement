@@ -1,16 +1,20 @@
 import React from "react";
 import "./object.css";
 
-export function Object({ props }) {
-	console.log(props.bottom);
-	const position = props.bottom ? { bottom: props.bottom } : {} && props.left ? { left: props.left } : {} && props.right ? { right: props.right } : {} && props.bottom ? { bottom: props.bottom } : {}
-	
+export function Object({ props, setText }) {
+
+	const position = {
+		bottom: props.bottom || undefined,
+		left: props.left || undefined,
+		right: props.right || undefined,
+		top: props.top || undefined,
+	};
+
 	return (
-		<img className="object"
+		<img className="object" onClick={setText}
 			alt={props.ressources}
 			src={props.ressources}
-			style=
-			{position}
+			style={position}
 		></img >
 	)
 }
