@@ -1,0 +1,41 @@
+.books {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  bottom: 10px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.text {
+  background-color: rgb(61, 49, 49);
+  color: white;
+  border: 2px solid white;
+  padding: 20px;
+  max-width: 350px;
+  bottom: 20px;
+  text-align: left;
+  > p {
+    cursor: pointer;
+    border-bottom: 2px solid rgb(61, 49, 49)
+  }
+  > p:hover {
+    border-bottom: 2px solid white;
+  }
+}
+
+.close {
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: rgb(61, 49, 49);
+  color: white;
+  width: 24px;
+  margin-right: -25px;
+  height: 24px;
+  border-radius: 25px;
+  border: 2px solid white;
+  margin-bottom: 5px;
+}
+.close:hover {
+  background-color: rgb(90, 75, 75);
+}
