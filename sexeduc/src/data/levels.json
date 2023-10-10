@@ -5,6 +5,27 @@
 		"nightmode": true,
 		"objects": [
 			{
+				"title": "bob",
+				"ressources": "./ressources/level1/object/bob.png",
+				"top": "200px",
+				"left": "50px",
+				"text": "<b>Bob:</b> Je sais très bien que tu m'aprécie, et si on allez chez moi ? <br><br><b>Anais:</b> Tu sais très bien que j'ai déjà refusé à deux maintes reprises. <br><br><b>Bob:</b> <i>Avance et embrasse anais</i> <br><br> <b>Anais:</b> <i>Se recule avec dégout</i> <br><br><b>Bob:</b> Tu finira par aimer ça <br><br>"
+			},
+			{
+				"title": "anais",
+				"ressources": "./ressources/level1/object/anais.png",
+				"left": "90px",
+				"top": "200px",
+				"text": "<b>Anais:</b> Tu sais très bien que j'ai déjà refusé à deux maintes reprises. <br><br><b>Bob:</b> <i>Avance et embrasse et anais</i> <br><br> <b>Anais:</b> <i>Se recule avec dégout</i> <br><br><b>Bob:</b> Tu finira par aimer ça <br><br>"
+			},
+			{
+				"title": "billy",
+				"ressources": "./ressources/level1/object/billy.png",
+				"left": "370px",
+				"top": "300px",
+				"text": "<b>Billy:</b> L'ancien gardien perdais souvent son propre mot de passe je sais qu'il avait l'habitude de lire la premiere page d'un livre de cuisine celui spécialisé dans les bananes"
+			},
+			{
 				"title": "ascenseur",
 				"ressources": "./ressources/level1/object/ascenseur.png",
 				"bottom": "1px",
@@ -113,25 +134,6 @@
 				"ressources": "./ressources/level1/object/windows.png",
 				"left": "180px",
 				"top": "15px"
-			},
-			{
-				"title": "bob",
-				"ressources": "./ressources/level1/object/bob.png",
-				"top": "200px",
-				"left": "50px"
-			},
-			{
-				"title": "anais",
-				"ressources": "./ressources/level1/object/anais.png",
-				"left": "90px",
-				"top": "200px"
-			},
-			{
-				"title": "billy",
-				"ressources": "./ressources/level1/object/billy.png",
-				"left": "370px", 
-				"top": "300px",
-				"text": "Billy: L'ancien gardien perdais souvent son propre mot de passe je sais qu'il avait l'habitude de lire la premiere page d'un livre de cuisine celui spécialisé dans les bananes"
 			}
 		]
 	}

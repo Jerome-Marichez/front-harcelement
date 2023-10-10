@@ -6,7 +6,24 @@
   flex-direction: column;
   align-items: flex-end;
 }
-
+.books span { background-color: rgb(177, 177, 9);}
+.books img { max-width: 60px;}
+.back-book {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  cursor: pointer;
+  width: max-content;
+  text-align: right;
+  border: 2px solid rgb(61, 49, 49);
+  transition: border 0.5s linear;
+}
+.back-book:hover {
+  border: 2px solid white;
+}
+.book {
+  font-size: 12px;
+}
 .books-text {
   background-color: rgb(61, 49, 49);
   color: white;
@@ -17,7 +34,7 @@
   text-align: left;
   > p {
     cursor: pointer;
-    border-bottom: 2px solid rgb(61, 49, 49)
+    border-bottom: 2px solid rgb(61, 49, 49);
   }
   > p:hover {
     border-bottom: 2px solid white;

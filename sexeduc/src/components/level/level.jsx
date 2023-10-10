@@ -1,7 +1,7 @@
 import React from "react";
 import "./level.css";
 
-export function Level({map, children, nightmode}) {
+export function Level({ map, children, nightmode }) {
 	let classname = "level";
 	if (nightmode) { }
 	const style = {
@@ -14,5 +14,4 @@ export function Level({map, children, nightmode}) {
 		</div>
 
 	)
-
 }
