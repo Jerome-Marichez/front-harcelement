@@ -22,7 +22,9 @@ export function Game() {
 	/** Manage Inventory */
 	useEffect(() => {
 		let inventory = "";
-		if (billyState > 0) { inventory = "- <b>Billy</b> m'a indiqué que l'ancien gardien lisait la 1er page de <b>'Cuisine à la banane'</b> dès qu'il oublié son mot de passe. <br><br>" }
+		if (billyState === 1) { inventory = "- <b>Billy</b> m'a indiqué que l'ancien gardien lisait la 1er page de <b>'Cuisine à la banane'</b> dès qu'il oublié son mot de passe. <br><br>" }
+		if (anaisState === 1) { inventory = "- <b>Anais</b> m'a indiqué que l'ancien gardien utilisé <b>1960</b> pour son mot de passe.<br><br>" }
+
 		if (inventory === "") { inventory = "Rien dans mon inventaire" }
 		setInventory(inventory);
 	}, [anaisState, billyState])
@@ -55,13 +57,13 @@ export function Game() {
 				})}
 
 				{personnages.map((personnage, index) => {
-					console.log(personnage.title);
+					console.log(personnage.anaisState);
 					if (personnage.title === 'anais')
 						return (
 							<Object
 								key={index}
 								props={personnage}
-								setText={() => setText(anaisState > 0 ? personnage.text2 : personnage.text)}
+								setText={() => setText(anaisState === 1 ? personnage.text2 : personnage.text)}
 								rotate={anaisState > 0 ? true : false}
 							/>
 						)
@@ -72,7 +74,7 @@ export function Game() {
 								key={index}
 								props={personnage}
 								setText={() => setText(personnage.text)}
-								hidden={anaisState > 0 ? true : false}
+								hidden={anaisState === 1 ? true : false}
 							/>
 						)
 					}
@@ -81,7 +83,7 @@ export function Game() {
 							<Object
 								key={index}
 								props={personnage}
-								setText={() => setText(billyState > 0 ? personnage.text2 : personnage.text)}
+								setText={() => setText(billyState === 1 ? personnage.text2 : personnage.text)}
 							/>
 						)
 				})}
