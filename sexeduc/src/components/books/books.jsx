@@ -2,13 +2,10 @@ import "./book.css";
 import { useState } from "react";
 
 export function Books({ isOpen }) {
-	const [bookOpen, setBookOpen] = useState(true);
-
-	if (bookOpen) {
+	if (isOpen) {
 		return (
 			<div className="books">
-				<div className="close" onClick={() => setBookOpen(false)}>X</div>
-				<div className="text">
+				<div className="books-text">
 					<p>Livre de sciences</p>
 					<p>Livre de bricolage</p>
 					<p>Livre de cuisine</p>
@@ -21,7 +18,7 @@ export function Books({ isOpen }) {
 		)
 	}
 
-	if (!bookOpen) {
+	if (!isOpen) {
 		return (<></>);
 	}
 

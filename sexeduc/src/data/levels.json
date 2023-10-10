@@ -33,7 +33,8 @@
 				"title": "library",
 				"ressources": "./ressources/level1/object/library.png",
 				"bottom": "180px",
-				"left": "20px"
+				"left": "20px",
+				"text": "Cette bibliothèque est impressionante elle contient de nombreux livres"
 			},
 			{
 				"title": "light",
