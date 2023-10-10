@@ -1,0 +1,9 @@
+.object {
+	z-index: 1;
+	position: absolute;
+	border: 2px solid transparent;
+	transition: border 0.45s linear;
+}
+
+
+.object:hover { border: 2px solid white;}

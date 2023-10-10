@@ -1,0 +1,45 @@
+[{
+	"title_niveau": "level1",
+	"map": "./ressources/level1/map.jpg",
+	"nightmode": true,
+	
+	"objects": [
+		{
+			"title": "ascenseur",
+			"ressources": "./ressources/level1/object/ascenseur.png",
+			"bottom": "1px"
+		},
+		{
+			"title": "chair",
+			"ressources": "./ressources/level1/object/chair.png"
+		},
+		{
+			"title": "furniture",
+			"ressources": "./ressources/level1/object/furniture.png"
+		},
+		{
+			"title": "library",
+			"ressources": "./ressources/level1/object/library.png"
+		},
+		{
+			"title": "light",
+			"ressources": "./ressources/level1/object/light.png"
+		},
+		{
+			"title": "lock_block",
+			"ressources": "./ressources/level1/object/lock_block.png"
+		},
+		{
+			"title": "map_world",
+			"ressources": "./ressources/level1/object/map_world.png"
+		},
+		{
+			"title": "table",
+			"ressources": "./ressources/level1/object/table.png"
+		},
+		{
+			"title": "windows",
+			"ressources": "./ressources/level1/object/windows.png"
+		}
+	]
+}]
