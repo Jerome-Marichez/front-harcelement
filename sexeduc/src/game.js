@@ -4,6 +4,7 @@ import "./game.css";
 import { Level } from "./components/level/level.jsx";
 import { Object } from "./components/object/object.jsx";
 import { MessageText } from "./components/messageText/messageText";
+import { Locktry } from "./components/locktry/locktry";
 import { Books } from "./components/books/books";
 import { useState, useEffect } from "react";
 
@@ -13,7 +14,8 @@ export function Game() {
 	const [lockTry, setLockTry] = useState(false);
 	const [anaisState, setAnaisState] = useState(0);
 	const [inventaire, setInventaire] = useState('');
-	
+	const [passwordFound, setPasswordFound] = useState(false);
+
 	useEffect(() => {
 		text?.includes('bibliothèque') ? setBookOpen(true) : setBookOpen(false);
 		text?.includes('cassier') ? setLockTry(true) : setLockTry(false);
@@ -41,6 +43,7 @@ export function Game() {
 
 			<MessageText text={text} setText={setText} />
 			<Books isOpen={bookOpen} />
+			<Locktry isOpen={lockTry && !passwordFound} unlock={() => setPasswordFound(true)} />
 		</div>
 	);
 }

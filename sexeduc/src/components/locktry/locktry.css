@@ -1,0 +1,17 @@
+.locktry {
+  display: flex;
+  position: absolute;
+  z-index: 4;
+  bottom: 250px;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 20px;
+  background-color: rgb(61, 49, 49);
+  padding: 20px;
+  border: 2px solid white;
+  
+}
+.locktry img {
+  width: 150px;
+}

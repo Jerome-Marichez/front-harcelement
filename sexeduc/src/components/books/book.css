@@ -2,12 +2,16 @@
   display: flex;
   position: absolute;
   z-index: 4;
-  bottom: 200px;
+  bottom: 250px;
   flex-direction: column;
   align-items: flex-end;
 }
-.books span { background-color: rgb(177, 177, 9);}
-.books img { max-width: 60px;}
+.books span {
+  background-color: rgb(177, 177, 9);
+}
+.books img {
+  max-width: 60px;
+}
 .back-book {
   position: absolute;
   bottom: 5px;
