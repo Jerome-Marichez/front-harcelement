@@ -9,6 +9,7 @@ import { MessageText } from "./components/messageText/messageText";
 import { Locktry } from "./components/locktry/locktry";
 import { Books } from "./components/books/books";
 import { useState, useEffect } from "react";
+import { redirect } from "react-router-dom";
 
 
 export function Game() {
@@ -40,7 +41,10 @@ export function Game() {
 		text?.includes('Anais') & anaisState === 0 && setAnaisState(1);
 		text?.includes('Billy') & billyState === 0 && setBillyState(1);
 		text?.includes('téléphone') & foundItems === 0 && setFoundItems(1);
-		if (billyState && anaisState && foundItems === 1 && text?.includes('Fin')) { }
+		if (text?.includes('Fin')) {
+			console.log("fin du niveau");
+			setTimeout(() => { window.location.replace("/video"); }, 8000);
+		}
 	}, [text]);
 	/** End Progression */
 
