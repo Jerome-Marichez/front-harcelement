@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./object.css";
 
-export function Object({ props, setText, hidden, rotate }) {
+export function Object({ props, setText, hidden, rotate}) {
 
 	const position = {
 		bottom: props.bottom || undefined,

@@ -2,13 +2,13 @@ import React from "react";
 import "./locktry.css"
 import { useState } from "react";
 
-export function Locktry({ isOpen, unlock }) {
+export function Locktry({ isOpen, setText }) {
 
 	const [inputValue, setInputValue] = useState('');
 
 	const handleUnlockAttempt = () => {
 		if (inputValue === 'banane1960') {
-			unlock();
+			setText()
 			alert('Déverrouillage réussi');
 		} else {
 			alert('Déverrouillage échec');
@@ -18,7 +18,7 @@ export function Locktry({ isOpen, unlock }) {
 	if (isOpen) {
 		return (
 			<div className="locktry">
-				<img src="./ressources/level1/locktry/locktry.jpg" />
+				<img src="./ressources/level1/locktry/locktry.jpg" alt="locktry"/>
 				<input
 					type="text"
 					value={inputValue}

@@ -9,7 +9,8 @@
 				"ressources": "./ressources/level1/object/ascenseur.png",
 				"bottom": "-2px",
 				"left": "40px",
-				"text": "La porte de l'ascenseur est bloqué je ne pourrait pas l'ouvrir tant que je ne dispose pas de la cle"
+				"text": "La porte de l'ascenseur est bloqué je ne pourrait pas l'ouvrir tant que je ne dispose pas de la cle",
+				"endtext": "<b>Fin du niveau</b><br><br>Félécitation vous avez réussi à débloquer l'ascenseur, cependant le smartphone ce met à ce dévérouiller et vous découvrez le contenu."
 			},
 			{
 				"title": "chair",
