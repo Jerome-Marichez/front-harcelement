@@ -1,0 +1,36 @@
+.button1 {
+    background-color: #007bff;
+    /* Couleur de fond */
+    color: #fff;
+    /* Couleur du texte */
+    /*padding: 10px 20px;*/
+    /* Espacement intérieur */
+    text-decoration: none;
+    /* Supprime les soulignements sur les liens */
+    border: none;
+    /* Supprime la bordure du bouton */
+    border-radius: 5px;
+    /* Coins arrondis */
+    cursor: pointer;
+    /* Curseur de la souris en main */
+    font-size: 16px;
+    /* Taille de police */
+    margin-top: 23%;
+    margin-left: 41%;
+    margin-right: 50%;
+}
+
+h1 {
+    color: #fff;
+    margin-left: 25%;
+}
+
+.button1:hover {
+    background-color: #0056b3;
+    /* Couleur de fond au survol */
+}
+
+.button1 a {
+    text-decoration: none;
+    /* Supprime la soulignement des liens */
+}
