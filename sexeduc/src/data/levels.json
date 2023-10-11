@@ -16,19 +16,22 @@
 				"title": "chair",
 				"ressources": "./ressources/level1/object/chair.png",
 				"top": "340px",
-				"left": "240px"
+				"left": "240px",
+				"text": "C'est une chaise."
 			},
 			{
 				"title": "chair",
 				"ressources": "./ressources/level1/object/chair.png",
 				"top": "300px",
-				"left": "240px"
+				"left": "240px",
+				"text": "Je n'ai pas le temps pour me reposer."
 			},
 			{
 				"title": "furniture",
 				"ressources": "./ressources/level1/object/furniture.png",
 				"top": "120px",
-				"left": "80px"
+				"left": "80px",
+				"text": "Il n'y à rien d'intéressant ici."
 			},
 			{
 				"title": "library",
@@ -41,34 +44,36 @@
 				"title": "light",
 				"ressources": "./ressources/level1/object/light.png",
 				"top": "120px",
-				"left": "20px"
+				"left": "20px",
+				"text": "C'est stupide de vouloir allumer la lumière en plein jour."
 			},
 			{
 				"title": "light",
 				"ressources": "./ressources/level1/object/light.png",
 				"bottom": "160px",
-				"right": "20px"
+				"right": "20px",
+				"text": "Je ferais mieux de chercher ailleurs."
 			},
 			{
 				"title": "trees",
 				"ressources": "./ressources/level1/object/trees.png",
 				"top": "220px",
 				"left": "210px",
-				"text": "C'est une plante, je ne vois pas bien en quoi cela me pourrait m'être utile ou m'aider"
+				"text": "C'est une plante, je ne vois pas bien en quoi cela me pourrait m'être utile ou m'aider."
 			},
 			{
 				"title": "trees",
 				"ressources": "./ressources/level1/object/trees.png",
 				"top": "380px",
 				"left": "210px",
-				"text": "C'est une plante, je ne vois pas bien en quoi cela me pourrait m'être utile ou m'aider"
+				"text": "C'est une plante, je ne vois pas bien en quoi cela me pourrait m'être utile ou m'aider."
 			},
 			{
 				"title": "trees",
 				"ressources": "./ressources/level1/object/trees.png",
 				"top": "220px",
 				"right": "10px",
-				"text": "C'est une plante, je ne vois pas bien en quoi cela me pourrait m'être utile ou m'aider"
+				"text": "C'est une plante, je ne vois pas bien en quoi cela me pourrait m'être utile ou m'aider."
 			},
 			{
 				"title": "light",
@@ -81,14 +86,14 @@
 				"ressources": "./ressources/level1/object/lock_block.png",
 				"bottom": "70px",
 				"left": "250px",
-				"text": "Je peux tenter d'ouvrir le casier de l'ancien gardien 🤔"
+				"text": "Je peux tenter d'ouvrir le casier de l'ancien gardien 🤔."
 			},
 			{
 				"title": "map_world",
 				"ressources": "./ressources/level1/object/map_world.png",
 				"top": "220px",
 				"right": "95px",
-				"text": "C'est une carte du monde assez classique"
+				"text": "C'est une carte du monde assez classique."
 			},
 			{
 				"title": "table",
@@ -99,21 +104,23 @@
 			{
 				"title": "windows",
 				"ressources": "./ressources/level1/object/windows.png",
-				"left": "60px",
+				"left": "200px",
 				"top": "15px",
-				"text": "C'est une fenêtre"
+				"text": "C'est une fenêtre."
 			},
 			{
 				"title": "windows",
 				"ressources": "./ressources/level1/object/windows.png",
-				"left": "120px",
-				"top": "15px"
+				"left": "260px",
+				"top": "15px",
+				"text": "Je dois trouver une solution pour sortir d'ici."
 			},
 			{
 				"title": "windows",
 				"ressources": "./ressources/level1/object/windows.png",
-				"left": "180px",
-				"top": "15px"
+				"left": "320px",
+				"top": "15px",
+				"text": "C'est une fenêtre."
 			}
 		],
 		"personnages": [
@@ -131,7 +138,7 @@
 				"left": "90px",
 				"top": "200px",
 				"text": "<b>Anais:</b> Je suis désolée mais je ne suis toujours pas intéressé 😒. <br><br><b>Bob:</b> <i>Avance et lui met la main aux fesses ✋</i> <br><br> <b>Anais:</b> <i>Répond au geste en lui infligeant une claque ✋</i> <br><br><b>Bob:</b> Tu finira par aimer ça 😡<br><br>",
-				"text2": "<b>Anais:</b> Je suis désolée que tu à du avoir à assisté à ça 😕. <br><br><b>Billy</b> m'a parlé du soucis que tu avait pour réparer l'ascenseur 😩.<br><br> Je sais que l'ancien gardien utilisé son année de naissance pour son mot de passe le voici: <b>1960</b><br><br>J'espère que cela nous aidera 🤔."
+				"text2": "<b>Anais:</b> Je suis désolée que tu à du avoir à assisté à ça 😕. <br><br><b>Billy</b> m'a parlé du soucis que tu avait pour réparer l'ascenseur 😩.<br><br> Je sais que l'ancien gardien utilisé son année de naissance entre autre pour son mot de passe le voici: <b>1960</b><br><br>J'espère que cela nous aidera 🤔."
 			},
 			{
 				"title": "billy",

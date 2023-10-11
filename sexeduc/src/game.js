@@ -1,6 +1,7 @@
 /* eslint-disable no-undef */
 import React from "react";
 import levels from "./data/levels.json";
+
 import "./game.css";
 import { Level } from "./components/level/level.jsx";
 import { Object } from "./components/object/object.jsx";
@@ -9,8 +10,10 @@ import { Locktry } from "./components/locktry/locktry";
 import { Books } from "./components/books/books";
 import { useState, useEffect } from "react";
 
+
 export function Game() {
-	const [text, setText] = useState("Bonjour vous êtes le nouveau gardien(e) de l'entreprise malheureusement l'ascenseur est resté bloqué électroniquement, vous devez trouvez la clé 🔑");
+
+	const [text, setText] = useState("Bonjour vous êtes le nouv(eau)(elle) gardien(e) de l'entreprise malheureusement l'ascenseur est resté bloqué électroniquement, vous devez trouvez la clé 🔑");
 	const [bookOpen, setBookOpen] = useState(false);
 	const [lockTry, setLockTry] = useState(false);
 
@@ -23,7 +26,7 @@ export function Game() {
 	useEffect(() => {
 		let inventory = "";
 		if (billyState === 1) { inventory = inventory + "- <b>Billy</b> m'a indiqué que l'ancien gardien lisait la 1er page de <b>'Cuisine à la banane'</b> dès qu'il oublié son mot de passe. <br><br>" }
-		if (anaisState === 1) { inventory = inventory + "- <b>Anais</b> m'a indiqué que l'ancien gardien utilisé <b>1960</b> pour son mot de passe.<br><br>" }
+		if (anaisState === 1) { inventory = inventory + "- <b>Anais</b> m'a indiquée que l'ancien gardien utilisé entre autre <b>1960</b> pour son mot de passe.<br><br>" }
 		if (foundItems === 1) { inventory = inventory + "- Vous avez trouvez une clé 🔑 <br><br> - Vous avez trouvez un téléphone. 📱" }
 		if (inventory === "") { inventory = "Rien dans mon inventaire" }
 		setInventory(inventory);
@@ -48,7 +51,7 @@ export function Game() {
 	return (
 		<div className="game">
 			<Level map={selectedLevel.map}>
-				<div className="inventory" onClick={() => setText(inventory)}><img src="./ressources/inventory/inventory.png" alt="inventory" width="24" />Inventory</div>
+				<div className="inventory" onClick={() => setText(inventory)}><img src="./ressources/inventory/inventory.png" alt="inventory" width="24" />Inventaire</div>
 
 				{objects.map((object, index) => {
 					return <Object
