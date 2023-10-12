@@ -1,12 +1,7 @@
-h1 {
-    color: black;
-}
-
 /* Scene.css */
-h1 {
-    color: black;
+.scene h1 {
+    color: rgb(0, 0, 0);
     text-align: center;
-    margin-left: 1%;
 }
 
 form {
@@ -14,22 +9,22 @@ form {
     margin: 0 auto;
 }
 
-h2 {
+.scene h2 {
     color: #555;
     margin-top: 20px;
 }
 
-p {
+.scene p {
     color: #777;
     margin-bottom: 10px;
 }
 
-label {
+.scene label {
     display: block;
     margin: 10px 0;
 }
 
-input[type="text"] {
+.scene input[type="text"] {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
@@ -37,11 +32,11 @@ input[type="text"] {
     border-radius: 4px;
 }
 
-input[type="radio"] {
+.scene input[type="radio"] {
     margin-right: 5px;
 }
 
-button[type="submit"] {
+.scene button[type="submit"] {
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
@@ -54,6 +49,41 @@ button[type="submit"] {
     margin-left: 45%;
 }
 
-button[type="submit"]:hover {
+.scene button[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+.scene congratulations {
+    color: rgb(172, 7, 7);
+}
+
+.answer-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #76f356;
+    padding: 20px;
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 80%;
+    z-index: 1000;
+    width: 50%;
+    height: 45%;
+}
+
+.answer-box p {
+    font-size: 300%;
+    /* Ajustez la taille de la police selon vos préférences */
+    color: #fff;
+    /* Couleur du texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Effet d'ombre portée sur le texte */
+    margin-top: 5%;
+}
+
+.answer-box img {
+    width: 29%;
+    margin-top: 3%;
 }

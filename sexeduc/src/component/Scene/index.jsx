@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Scene.css';
+import felicitation from '../img/felicitation.png'
 
 function Scene() {
     const [answers, setAnswers] = useState({
@@ -10,6 +11,7 @@ function Scene() {
     });
 
     const [showAnswers, setShowAnswers] = useState(false);
+    const [showCongratulations, setShowCongratulations] = useState(false);
 
     const handleAnswerChange = (question, answer) => {
         setAnswers({ ...answers, [question]: answer });
@@ -17,14 +19,20 @@ function Scene() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Vous pouvez traiter les réponses ici, par exemple, en évaluant les scénarios de harcèlement.
+
+        // Vérifier si toutes les réponses sont correctes
+        //const allCorrect = Object.values(answers).every((answer) => answer === 'correct');
 
         // Activer l'affichage des réponses
         setShowAnswers(true);
+        if (answers.q1 !== 'accepter' && answers.q2 !== 'discuter' && answers.q3 !== 'signaler' && answers.q4 !== 'non') {
+            // Afficher le message de félicitations
+            setShowCongratulations(true);
+        }
     };
 
     return (
-        <div>
+        <div className="scene">
             <h1>Quiz Formation</h1>
             <form onSubmit={handleSubmit}>
                 <div>
@@ -104,15 +112,40 @@ function Scene() {
                 </div>
 
                 <div>
-                    <h2>Section 3: Conversation entre Anaiss et l'utilisateur</h2>
-                    <p>3. Dans la conversation avec l'utilisateur, quel est le mot de passe pour réparer l'ascenseur ?</p>
-                    <input
-                        type="text"
-                        value={answers.q3}
-                        onChange={(e) => handleAnswerChange('q3', e.target.value)}
-                    />
-                    {showAnswers && answers.q3 !== '1960' && (
-                        <p>Correction : La réponse correcte est "1960".</p>
+                    <h2>Section 3: Question sur le harcèlement</h2>
+                    <p>3. Dans le contexte du harcèlement en ligne, quelle action est la plus appropriée ?</p>
+                    <label>
+                        <input
+                            type="radio"
+                            name="q3"
+                            value="signaler"
+                            checked={answers.q3 === 'signaler'}
+                            onChange={() => handleAnswerChange('q3', 'signaler')}
+                        />
+                        Signaler l'incident aux autorités
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="q3"
+                            value="encourager"
+                            checked={answers.q3 === 'encourager'}
+                            onChange={() => handleAnswerChange('q3', 'encourager')}
+                        />
+                        Encourager le harceleur
+                    </label>
+                    <label>
+                        <input
+                            type="radio"
+                            name="q3"
+                            value="ignorer"
+                            checked={answers.q3 === 'ignorer'}
+                            onChange={() => handleAnswerChange('q3', 'ignorer')}
+                        />
+                        Ignorer les messages du harceleur
+                    </label>
+                    {showAnswers && answers.q3 !== 'signaler' && (
+                        <p>Correction : La réponse correcte est "Signaler l'incident aux autorités".</p>
                     )}
                 </div>
 
@@ -146,6 +179,13 @@ function Scene() {
 
                 <button type="submit">Soumettre</button>
             </form>
+
+
+            {showAnswers && !showCongratulations && (
+                <div className="answer-box">
+                    <p> Bravo !!!!!!</p><img src={felicitation} alt="felicitation" />
+                </div>
+            )}
         </div>
     );
 }
